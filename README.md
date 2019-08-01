@@ -5,8 +5,8 @@ Once you have 2nd_keyboard.lua set up you almost never have to touch it again
 
 ### Credit
 
-- TaranVH also did a tutorial this and it helped me understand LuaMacros [TaranVH/2nd-keyboard](https://github.com/TaranVH/2nd-keyboard/tree/master/LUAMACROS)
-- Tom scott explained how he got 14 keyboards to work sperately in his video [The art of the bodge](https://www.youtube.com/watch?v=lIFE7h3m40U)
+- TaranVH also did a tutorial on this and it helped me understand LuaMacros [TaranVH/2nd-keyboard](https://github.com/TaranVH/2nd-keyboard/tree/master/LUAMACROS)
+- Tom scott explained how he got 14 keyboards to work seperately in his video [The art of the bodge](https://www.youtube.com/watch?v=lIFE7h3m40U)
 
 Thanks to them for the inspiration for this project
 
