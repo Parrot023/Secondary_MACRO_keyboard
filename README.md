@@ -12,6 +12,7 @@ MACROS  :  \\?\HID#VID_045E&PID_0745&MI_00#7&E77A16&0&0000#{884B96C3-56EF-11D1-B
 Total number of devices: 2
 ```
 In my case you see i have two devices connected. To the rigth of the name MACROS you we have a long string this is the device type and id. The id is important in my case you see where it says PID_0745 this is my keyboard id. Note down yours as you will need it later.
+
 4. Open up LuaMacros and open the file **2nd_keyboard.lua**. Now change the variable kbID with you keyboard id
 ```
 local kbID = 'PID_0745';
