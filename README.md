@@ -15,9 +15,9 @@ Thanks to them for the inspiration for this project
 ## Here is how to do it if you want to try my code
 
 ### 1. Download the neccescary programs and files
-    - [LuaMacros](http://www.hidmacros.eu/forum/viewtopic.php?f=10&t=241#p794)
-    - [Auto hotkey](https://www.autohotkey.com)
-    - This github repository
+- [LuaMacros](http://www.hidmacros.eu/forum/viewtopic.php?f=10&t=241#p794)
+- [Auto hotkey](https://www.autohotkey.com)
+- This github repository
 
 ### 2. Get the id of your secondary keyboard
 Open up LuaMacros and open the file **Get_key_codes.lua**. You will be prompted to press a button on your secondary keyboard. The program will then output a list of all connected devices. Something like this: 
