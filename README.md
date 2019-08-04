@@ -1,9 +1,9 @@
-# Secondary MACRO keyboard for windows
-This project is about making a fully functional secondary macro keyboard for Windows
+# Secondary MACRO keyboard for Windows
+This project is about making a fully functional secondary macro keyboard for Windows.
 This have been done before but i did it in a slightly different way as 95% of all coding will be done in Auto hotkey.
-This is because i found that finding help for LuaMacros can be quiet hard. Autohotkeys scripting language isnt as good as lua. But finding help for Auto Hotkey is easier than finding help for LuaMacros
-Once you have 2nd_keyboard.lua set up you almost never have to touch it again
-Therfore most problems you will run in to will be about Auto Hotkey
+This is because i found that finding help for LuaMacros can be quiet hard. Autohotkeys scripting language isnt as good as lua. But finding help for Auto Hotkey is easier than finding help for LuaMacros.
+Once you have 2nd_keyboard.lua set up you almost never have to touch it again.
+Therefore most problems you will run into will be about Auto Hotkey
 
 ### Credit
 
@@ -13,6 +13,7 @@ Therfore most problems you will run in to will be about Auto Hotkey
 Thanks to them for the inspiration for this project
 
 ## Here is how to do it if you want to try my code
+Keep in mind following along might require a little bit of computer knowledge.
 
 ### 1. Download the neccescary programs and files
 - [LuaMacros](http://www.hidmacros.eu/forum/viewtopic.php?f=10&t=241#p794)
@@ -37,15 +38,19 @@ Open up LuaMacros and open the file **2nd_keyboard.lua**. Now change the variabl
 ```
 local kbID = 'You secondary keyboard id';'
 ```
+You will also need to change fullpath to the path to were the file key.txt is located
+```
+local file = io.open("fullpath\\key.txt", "w")
+```
 
 ### 4. Run it and cross you fingers 
-With **2nd_keyboard.lua** open in LuaMacros click the little blue play button this will run the program hopefully without errors. Now double click on the file **Main.ahk** this will run it and you will see a little green H in your task bar. Try and type 5 on your numberpad on the secondary keyboard. If your keyboard types 🤯 Congrats you know have a secondary MACRO keyboard. All macros can be configured in the Main.ahk file
+With **2nd_keyboard.lua** open in LuaMacros click the little blue play button this will run the program (hopefully without errors). Now double click on the file **Main.ahk** this will run it and you will see a little green H in your task bar. Try and type 5 on your numberpad on the secondary keyboard. If your keyboard types 🤯 Congrats you now have a secondary MACRO keyboard. All macros can be configured in the Main.ahk file
 
 ### Side notes:
 
 #### Auto Hotkey documentation
 If you are new to Auto Hotkey you can find the documentation [here](https://www.autohotkey.com/docs/AutoHotkey.htm)
-Its an excellent toll for creating som realy powerfull macros
+Its an excellent tool for creating som really powerfull macros
 
 #### Run on startup
 if you want these files to run on startup you can move the file **2nd_kb_run_on_startup.bat** to
@@ -57,15 +62,10 @@ If you havent moved anything since you downloaded it the the path to LuaMacros w
 ```
 C:\Users\Username\Downloads\luamacros
 ```
-And the path to this folder wil probably be:
+And the path to **Main.ahk** wil probably be:
 ```
-C:\Users\Username\Downloads\Secondary_MACRO_keyboard
-```
-If this is the case change **2nd_kb_run_on_startup.bat** to:
-```
-start C:\Users\Username\Downloads\luamacros\LuaMacros.exe -r "C:\Users\Username\Downloads\Secondary_MACRO_keyboard\2nd_keyboard.lua"
+C:\Users\Username\Downloads\Secondary_MACRO_keyboard\Main.ahk
 
-start C:\Users\Username\Downloads\Secondary_MACRO_keyboard\2nd_keyboard_project\Main.ahk
 ```
-**REMEMBER**: to change Username to your username
+If this is the you only need to change **Username** to whatever your username is.
 

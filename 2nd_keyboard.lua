@@ -17,6 +17,7 @@ lmc_print_devices() -- prints all devices, you should se a device named MACROS
 -- function to write the key codes to file: key.txt
 write_to_file = function (key)
     -- make sure to replace "fullpath" with the path that leads to your key.txt file
+    -- REMEMBER to use double \\ insted of \ when specifying the path
     local file = io.open("fullpath\\key.txt", "w")
     file:write(key)
     file:flush() -- flush = save

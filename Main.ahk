@@ -5,9 +5,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetTitleMatchMode, RegEx
 
 
-;BTW these key codes are ascii
+;BTW these key codes are unicode
+;https://en.wikipedia.org/wiki/List_of_Unicode_characters
 ;You can add more key codes if you want
 ;If you dont know the key code you can use Get_key_code.lua
+;Here we attach a key code to each key.
+;this is like saying. when i ask for 0 give me back 48 etc. each key is seperated by commas.
 
         ;List of main keys
         ;Number keys
@@ -33,6 +36,8 @@ f24::
     ;Read the file key.txt and outputs the result in a variable named Output
     FileRead, Output, key.txt
 
+    ;Here we ask if Output is equal to 1. 1 then gets mapped to main key 49 see the list Main_keys above
+    ;So what we are actually asking is if Output equals 49
     if (Output == Main_Keys["1"]) 
         ;Windows applications can be run without full path, but most other programs need a full path
         Run, Notepad
@@ -43,6 +48,8 @@ f24::
 
     ;Avoid pressing numlock as it will change the key codes for the varius numpad keys
     ;In this example i have turned each key on the numpad in to an emoji
+    ;Here we ask if Output is equal to /. / then gets mapped to main key 111 see the list Numpad above
+    ;So what we are actually asking is if Output equals 111 if it is send the emoji. 
     else if (Output == Numpad["/"])
         Send, 😁
     else if (Output == Numpad["*"])
@@ -74,5 +81,5 @@ f24::
     else if (Output == Numpad["+"])
         Send, 🤮
 
-;Return need to be at the end of every hotkey
+;Return needs to be at the end of every hotkey
 Return
