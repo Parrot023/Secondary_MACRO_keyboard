@@ -80,6 +80,8 @@ f24::
         Send, 🤐
     else if (Output == Numpad["+"])
         Send, 🤮
+    
+    
 
 ;Return needs to be at the end of every hotkey
 Return

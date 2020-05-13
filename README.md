@@ -38,10 +38,6 @@ Open up LuaMacros and open the file **2nd_keyboard.lua**. Now change the variabl
 ```
 local kbID = 'You secondary keyboard id';'
 ```
-You will also need to change fullpath to the path to were the file key.txt is located
-```
-local file = io.open("fullpath\\key.txt", "w")
-```
 
 ### 4. Run it and cross you fingers 
 With **2nd_keyboard.lua** open in LuaMacros click the little blue play button this will run the program (hopefully without errors). Now double click on the file **Main.ahk** this will run it and you will see a little green H in your task bar. Try and type 5 on your numberpad on the secondary keyboard. If your keyboard types 🤯 Congrats you now have a secondary MACRO keyboard. All macros can be configured in the Main.ahk file
